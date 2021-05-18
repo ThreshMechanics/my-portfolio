@@ -10,7 +10,7 @@ function Header() {
                 </a>
             </Name>
             <NavMenu>
-                <a>
+                <a href='#portfolio'>
                     <span>PORTFOLIO</span>
                 </a>
                 <a>
@@ -35,6 +35,7 @@ const Nav = styled.nav`
     height: 70px;
     display: flex;
     align-items: center;
+    z-index: 2;
 `
 
 const Name = styled.div`

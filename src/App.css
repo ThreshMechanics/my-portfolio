@@ -37,3 +37,47 @@
     transform: rotate(360deg);
   }
 }
+
+.portfolio-icon {
+  height: 5rem;
+  width: 5rem;
+  color: #282c34;
+  margin: 1rem 0;
+}
+
+.html-icon {
+  color: #e96228;
+}
+
+.css-icon {
+  color: #2862e9;
+}
+
+.js-icon {
+  color: #efd81d;
+}
+
+.react-icon {
+  color: #5ed3f3;
+}
+
+.sass-icon {
+  color: #c96195;
+}
+
+.bs-icon {
+  color: #533b78;
+}
+
+.git-icon {
+  color: #e84e31;
+}
+
+.wp-icon {
+  color: #015496;
+}
+
+.skills-icon {
+  width: 5rem;
+  height: 5rem;
+}
