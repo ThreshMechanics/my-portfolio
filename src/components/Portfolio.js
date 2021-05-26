@@ -20,9 +20,10 @@ function Portfolio() {
                     <FaCloud className='portfolio-icon icon-cloud' />
                 </GridItemContainer>
                 <GridItemContainer>
-                <ImgContainer>
-                        <img src='/Images/DisneyScreenshot.PNG' />
+                    <ImgContainer>
+                        <img src='/Images/disneycloness.PNG' />
                         <HiddenContainer>
+                            <h3>DISNEY+ CLONE</h3>
                             <h3>React, Redux, Firebase</h3>
                         </HiddenContainer>
                     </ImgContainer>
@@ -30,20 +31,22 @@ function Portfolio() {
                     <FaCloud className='portfolio-icon icon-cloud' />
                 </GridItemContainer>
                 <GridItemContainer>
-                <ImgContainer>
-                        <img src='/Images/DisneyScreenshot.PNG' />
+                    <ImgContainer>
+                        <img src='/Images/applecloness.PNG' />
                         <HiddenContainer>
-                            <h3>React, Redux, Firebase</h3>
+                            <h3>APPLE CLONE</h3>
+                            <h3>HTML, SASS, JavaScript</h3>
                         </HiddenContainer>
                     </ImgContainer>
                     <FaGithub className='portfolio-icon icon-git' />
                     <FaCloud className='portfolio-icon icon-cloud' />
                 </GridItemContainer>
                 <GridItemContainer>
-                <ImgContainer>
-                        <img src='/Images/DisneyScreenshot.PNG' />
+                    <ImgContainer>
+                        <img src='/Images/uadventuress.PNG' />
                         <HiddenContainer>
-                            <h3>React, Redux, Firebase</h3>
+                            <h3>TRAVEL AGENCY WEBSITE</h3>
+                            <h3>Wordpress, SEO, CSS</h3>
                         </HiddenContainer>
                     </ImgContainer>
                     <FaGithub className='portfolio-icon icon-git' />
@@ -62,7 +65,8 @@ const Container = styled.div`
 
 const Title = styled.div`
     font-size: 2.5rem;
-    
+    padding-top: 5rem;
+
     h2 {
         margin-top: 0rem;
         padding-top: 1rem;
@@ -92,13 +96,14 @@ const ImgContainer = styled.div`
     img {
         max-width: 100%;
         max-height: 100%;
-
+        object-fit: contain;
     }
 `
 const HiddenContainer = styled.div`
-    height: 100%;
     width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     opacity: 0;
     position: absolute;
     justify-content: center;

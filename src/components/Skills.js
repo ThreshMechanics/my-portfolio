@@ -4,7 +4,7 @@ import { FaHtml5, FaCss3Alt, FaJs, FaSass, FaBootstrap, FaReact, FaGitAlt, FaWor
 
 function Skills() {
     return (
-        <Container>
+        <Container id='skills'>
             <Title>
                 <h2>=SKILLS=</h2>
             </Title>
@@ -54,6 +54,7 @@ const Container = styled.div`
 
 const Title = styled.div`
     font-size: 2.5rem;
+    padding-top: 5rem;
 
     h2 {
         color: #66fcf1;
