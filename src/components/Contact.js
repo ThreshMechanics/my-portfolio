@@ -37,7 +37,6 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
 `
 
 const Title = styled.div`
@@ -48,6 +47,11 @@ const Title = styled.div`
         color: #66FCF1;
         margin-top: 0rem;
         padding-top: 1rem;
+    }
+
+    @media only screen and (max-width: 480px) {
+        font-size: 1.8rem;
+        padding-top: 2rem;
     }
 `
 
@@ -82,5 +86,9 @@ const FormGroup = styled.div`
 
     label {
         justify-self: start;
+    }
+
+    @media only screen and (max-width: 480px) {
+        width: 100%;
     }
 `

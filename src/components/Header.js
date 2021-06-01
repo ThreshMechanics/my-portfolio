@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { FaBars } from 'react-icons/fa'
 
 function Header() {
 
@@ -19,9 +20,10 @@ function Header() {
         <Nav className={navbar ? 'navbar active' : 'navbar'}>
             <Name>
                 <a href='#top'>
-                    JOSH HERMANS - FRONT END DEV
+                    JOSH HERMANS<span> - FRONT END DEV</span>
                 </a>
             </Name>
+            <FaBars className='mobile-burger'/>
             <NavMenu>
                 <a href='#portfolio'>
                     <span>PORTFOLIO</span>
@@ -45,11 +47,18 @@ export default Header
 const Nav = styled.nav`
     background-color: transparent;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 70px;
     display: flex;
     align-items: center;
     z-index: 2;
+
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+        justify-content: space-evenly;
+        border-bottom: 1px ridge #66FCF1
+    }
+
 `
 
 const Name = styled.div`
@@ -65,6 +74,28 @@ const Name = styled.div`
         &:hover {
             transform: scaleX(1.05);
             color: white;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        margin-right: 3rem;
+        a {
+            width: 100%;
+            font-size: 25px;
+
+            span {
+                display: none;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        margin-left: 2rem;
+        width: 35%;
+        border: 3px solid white;
+
+        a {
+            font-size: 1.3125rem;
         }
     }
 `
@@ -87,6 +118,24 @@ const NavMenu = styled.div`
         &:hover {
             transform: scaleX(1.05);
             color: white;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        display: none;
+    }
+
+    @media only screen and (max-width: 992px) {
+        width: 50%;
+        margin-left: 8rem;
+
+        a {
+            margin: 0 1rem;
+
+            span {
+                font-size: 1.3125rem;
+            }
+
         }
     }
 ` 

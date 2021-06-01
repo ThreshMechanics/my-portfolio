@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Header from './Header'
 import Particles from 'react-particles-js'
 import particlesConfig from '../config/particle-config'
+import { FaGithub, FaLinkedin, FaArrowDown } from 'react-icons/fa'
 
 
 function Hero() {
@@ -11,14 +12,25 @@ function Hero() {
             <Header />
             <HeroContainer>
                 <h2>JOSH HERMANS</h2>
-                <h4>WEB DEVELOPER IN HTML, CSS, JAVASCRIPT, REACT</h4>
+                <h4>WEB DEVELOPER IN HTML, CSS, JAVASCRIPT</h4>
                 <a href='#'>
                     <CTA>DOWNLOAD MY CV</CTA>
                 </a>
+                <div>
+                    <a href='https://github.com/ThreshMechanics'>
+                        <FaGithub className='hero-icon' />
+                    </a>
+                    <a href='https://www.linkedin.com/in/joshua-hermans-71159910a/'>
+                        <FaLinkedin className='hero-icon' />
+                    </a>
+                </div>
                 <Wrap>
                     <Particles className='particles' params={particlesConfig} />
                 </Wrap>
             </HeroContainer>
+            <a id='arrow-hero' href='#portfolio'>
+                <FaArrowDown className='hero-arrow-icon' />
+            </a>
         </Container>
     )
 }
@@ -42,6 +54,12 @@ const Container = styled.div`
         color: white;
         font-size: 25px; 
     }
+
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+        height: 50rem;
+        justify-content: space-evenly;
+    }
 `
 const HeroContainer = styled.div`
     height: calc(100vh - 200px);
@@ -49,6 +67,16 @@ const HeroContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 480px) {
+        
+        h2 {
+            font-size: 40px;
+        }
+        h4 {
+            font-size: 25px;
+        }
+    }
 `
 
 
@@ -58,6 +86,10 @@ const CTA = styled.button`
     background-color: #0b0c10;
     color: white;
     border-radius: 4px;
+
+    @media only screen and (max-width: 480px) {
+        font-size: 18px;
+    }
 `
 
 const Wrap = styled.div`
@@ -65,4 +97,8 @@ const Wrap = styled.div`
     height: calc(100vh - 220px);
     width: 100%;
     z-index: -1;
+
+    @media only screen and (max-width: 480px) {
+        display: none;
+    }
 `

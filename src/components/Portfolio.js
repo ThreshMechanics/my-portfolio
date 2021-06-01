@@ -11,13 +11,18 @@ function Portfolio() {
             <Grid>
                 <GridItemContainer>
                     <ImgContainer>
-                        <img src='/Images/DisneyScreenshot.PNG' />
+                        <img src='/Images/ecommercess.PNG' />
                         <HiddenContainer>
-                            <h3>React, Redux, Firebase</h3>
+                            <h3>Ecommerce Site</h3>
+                            <h3>React, Styled Components</h3>
                         </HiddenContainer>
                     </ImgContainer>
-                    <FaGithub className='portfolio-icon icon-git' />
-                    <FaCloud className='portfolio-icon icon-cloud' />
+                    <a href='https://github.com/ThreshMechanics/ecommerce-clothing-site'>
+                        <FaGithub className='portfolio-icon icon-git' />
+                    </a>
+                    <a href='https://ecommerce-site-portfolio.netlify.app/'>
+                        <FaCloud className='portfolio-icon icon-cloud' />
+                    </a>
                 </GridItemContainer>
                 <GridItemContainer>
                     <ImgContainer>
@@ -27,8 +32,12 @@ function Portfolio() {
                             <h3>React, Redux, Firebase</h3>
                         </HiddenContainer>
                     </ImgContainer>
-                    <FaGithub className='portfolio-icon icon-git' />
-                    <FaCloud className='portfolio-icon icon-cloud' />
+                    <a href='https://github.com/ThreshMechanics/disney-clone'>
+                        <FaGithub className='portfolio-icon icon-git' />
+                    </a>
+                    <a href='https://disney-clone-portfolio.netlify.app/'>
+                        <FaCloud className='portfolio-icon icon-cloud' />
+                    </a>
                 </GridItemContainer>
                 <GridItemContainer>
                     <ImgContainer>
@@ -38,8 +47,12 @@ function Portfolio() {
                             <h3>HTML, SASS, JavaScript</h3>
                         </HiddenContainer>
                     </ImgContainer>
-                    <FaGithub className='portfolio-icon icon-git' />
-                    <FaCloud className='portfolio-icon icon-cloud' />
+                    <a href='https://github.com/ThreshMechanics/apple-clone'>
+                        <FaGithub className='portfolio-icon icon-git' />
+                    </a>
+                    <a href='https://threshmechanics.github.io/apple-clone/'>
+                        <FaCloud className='portfolio-icon icon-cloud' />
+                    </a>
                 </GridItemContainer>
                 <GridItemContainer>
                     <ImgContainer>
@@ -49,8 +62,9 @@ function Portfolio() {
                             <h3>Wordpress, SEO, CSS</h3>
                         </HiddenContainer>
                     </ImgContainer>
-                    <FaGithub className='portfolio-icon icon-git' />
-                    <FaCloud className='portfolio-icon icon-cloud' />
+                    <a href ='https://uadventureabroad.com/'>
+                        <FaCloud className='portfolio-icon icon-cloud' />
+                    </a>
                 </GridItemContainer>
             </Grid>
         </Container>
@@ -71,12 +85,21 @@ const Title = styled.div`
         margin-top: 0rem;
         padding-top: 1rem;
     }
+
+    @media only screen and (max-width: 480px) {
+        font-size: 1.8rem;
+        padding-top: 2rem;
+    }
 `
 
 const Grid = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
+    @media only screen and (max-width: 480px) {
+        flex-direction: column;
+    }
 `
 
 const GridItemContainer = styled.div`
@@ -84,6 +107,10 @@ const GridItemContainer = styled.div`
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 40%;
+
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
 `
 
 const ImgContainer = styled.div`
@@ -97,6 +124,10 @@ const ImgContainer = styled.div`
         max-width: 100%;
         max-height: 100%;
         object-fit: contain;
+    }
+
+    @media only screen and (max-width: 480px) {
+        width: 90%;
     }
 `
 const HiddenContainer = styled.div`
@@ -112,7 +143,7 @@ const HiddenContainer = styled.div`
     transition: all 250ms;
 
     &:hover {
-        opacity: .7;
+        opacity: .8;
     }
 
     h3 {
