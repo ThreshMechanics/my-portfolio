@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { FaBars } from 'react-icons/fa'
 
 function Header() {
+    const [showMenu, setShowMenu] = useState(false);
 
     const [navbar, setNavbar] = useState(false);
 
@@ -14,6 +15,7 @@ function Header() {
         }
     }
 
+
     window.addEventListener('scroll', changeBackground);
 
     return (
@@ -23,8 +25,8 @@ function Header() {
                     JOSH HERMANS<span> - FRONT END DEV</span>
                 </a>
             </Name>
-            <FaBars className='mobile-burger'/>
-            <NavMenu>
+            <FaBars onClick={() => setShowMenu(!showMenu)} className='mobile-burger'/>
+            <NavMenu id={showMenu ? 'mobileMenuActive': 'mobileMenu'}>
                 <a href='#portfolio'>
                     <span>PORTFOLIO</span>
                 </a>
@@ -92,7 +94,6 @@ const Name = styled.div`
     @media only screen and (max-width: 992px) {
         margin-left: 2rem;
         width: 35%;
-        border: 3px solid white;
 
         a {
             font-size: 1.3125rem;
