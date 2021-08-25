@@ -13,7 +13,7 @@ function Hero() {
             <HeroContainer>
                 <h2>JOSH HERMANS</h2>
                 <h4>WEB DEVELOPER IN HTML, CSS, JAVASCRIPT</h4>
-                <a href='#'>
+                <a href="/download/JoshCV.pdf" download="Josh_resume">
                     <CTA>DOWNLOAD MY CV</CTA>
                 </a>
                 <div>

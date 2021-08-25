@@ -11,7 +11,7 @@ function Portfolio() {
             <Grid>
                 <GridItemContainer>
                     <ImgContainer>
-                        <img src='/Images/ecommercess.PNG' />
+                        <img src='/Images/ecommercess.PNG' alt=''/>
                         <HiddenContainer href='https://ecommerce-site-portfolio.netlify.app/' target="_blank">
                             <h3>Ecommerce Site</h3>
                             <h3>React, Styled Components</h3>
@@ -26,7 +26,7 @@ function Portfolio() {
                 </GridItemContainer>
                 <GridItemContainer>
                     <ImgContainer>
-                        <img src='/Images/disneycloness.PNG' />
+                        <img src='/Images/disneycloness.PNG' alt=''/>
                         <HiddenContainer href='https://disney-clone-portfolio.netlify.app/' target="_blank">
                             <h3>DISNEY+ CLONE</h3>
                             <h3>React, Redux, Firebase</h3>
@@ -41,7 +41,7 @@ function Portfolio() {
                 </GridItemContainer>
                 <GridItemContainer>
                     <ImgContainer>
-                        <img src='/Images/applecloness.PNG' />
+                        <img src='/Images/applecloness.PNG' alt=''/>
                         <HiddenContainer href='https://threshmechanics.github.io/apple-clone/' target="_blank">
                             <h3>APPLE CLONE</h3>
                             <h3>HTML, SASS, JavaScript</h3>
@@ -56,7 +56,7 @@ function Portfolio() {
                 </GridItemContainer>
                 <GridItemContainer>
                     <ImgContainer>
-                        <img src='/Images/uadventuress.PNG' />
+                        <img src='/Images/uadventuress.PNG' alt=''/>
                         <HiddenContainer href='https://uadventureabroad.com/' target='_blank'>
                             <h3>TRAVEL AGENCY WEBSITE</h3>
                             <h3>Wordpress, SEO, CSS</h3>
