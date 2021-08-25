@@ -27,16 +27,13 @@ function Header() {
             </Name>
             <FaBars onClick={() => setShowMenu(!showMenu)} className='mobile-burger'/>
             <NavMenu id={showMenu ? 'mobileMenuActive': 'mobileMenu'}>
-                <a href='#portfolio'>
+                <a href='#portfolio' onClick={() => setShowMenu(!showMenu)}>
                     <span>PORTFOLIO</span>
                 </a>
-                <a href='#skills'>
+                <a href='#skills' onClick={() => setShowMenu(!showMenu)}>
                     <span>SKILLS</span>
                 </a>
-                <a>
-                    <span>ABOUT</span>
-                </a>
-                <a href='#contact'>
+                <a href='#contact' onClick={() => setShowMenu(!showMenu)}>
                     <span>CONTACT</span>
                 </a>
             </NavMenu>

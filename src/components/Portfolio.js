@@ -12,7 +12,7 @@ function Portfolio() {
                 <GridItemContainer>
                     <ImgContainer>
                         <img src='/Images/ecommercess.PNG' />
-                        <HiddenContainer>
+                        <HiddenContainer href='https://ecommerce-site-portfolio.netlify.app/' target="_blank">
                             <h3>Ecommerce Site</h3>
                             <h3>React, Styled Components</h3>
                         </HiddenContainer>
@@ -27,7 +27,7 @@ function Portfolio() {
                 <GridItemContainer>
                     <ImgContainer>
                         <img src='/Images/disneycloness.PNG' />
-                        <HiddenContainer>
+                        <HiddenContainer href='https://disney-clone-portfolio.netlify.app/' target="_blank">
                             <h3>DISNEY+ CLONE</h3>
                             <h3>React, Redux, Firebase</h3>
                         </HiddenContainer>
@@ -42,7 +42,7 @@ function Portfolio() {
                 <GridItemContainer>
                     <ImgContainer>
                         <img src='/Images/applecloness.PNG' />
-                        <HiddenContainer>
+                        <HiddenContainer href='https://threshmechanics.github.io/apple-clone/' target="_blank">
                             <h3>APPLE CLONE</h3>
                             <h3>HTML, SASS, JavaScript</h3>
                         </HiddenContainer>
@@ -57,7 +57,7 @@ function Portfolio() {
                 <GridItemContainer>
                     <ImgContainer>
                         <img src='/Images/uadventuress.PNG' />
-                        <HiddenContainer>
+                        <HiddenContainer href='https://uadventureabroad.com/' target='_blank'>
                             <h3>TRAVEL AGENCY WEBSITE</h3>
                             <h3>Wordpress, SEO, CSS</h3>
                         </HiddenContainer>
@@ -130,7 +130,7 @@ const ImgContainer = styled.div`
         width: 90%;
     }
 `
-const HiddenContainer = styled.div`
+const HiddenContainer = styled.a`
     width: 100%;
     height: 100%;
     display: flex;
@@ -141,6 +141,7 @@ const HiddenContainer = styled.div`
     align-items: center;
     background-color: rgb(102,252,241);
     transition: all 250ms;
+    text-decoration: none;
 
     &:hover {
         opacity: .8;
@@ -149,5 +150,9 @@ const HiddenContainer = styled.div`
     h3 {
         color: #0b0c10;
         font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 480px) {
+        width: 100%;
     }
 `
