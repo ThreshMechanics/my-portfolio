@@ -86,6 +86,7 @@ const CTA = styled.button`
     background-color: #0b0c10;
     color: white;
     border-radius: 4px;
+    cursor: pointer;
 
     @media only screen and (max-width: 480px) {
         font-size: 18px;
